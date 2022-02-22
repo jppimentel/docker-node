@@ -1,0 +1,8 @@
+docker -v                                           # shows docker version
+docker-compose -v                                   # shows docker-compose version
+docker build -t jppimentel/dockernode .             # build image with name 'jppimentel/dockernode' with all files ( . )
+dockr run -p 3000:3000 -d jppimentel/dockernode     # run image 'jppimentel/dockernode' in port 3000
+docker ps                                           # show running containers
+docker stop bf115af680b1                            # stop container with id "bf115af680b1"
+docker rm bf115af680b1                              # remove container with id "bf115af680b1"
+docker-compose -up                                  # to build updates
